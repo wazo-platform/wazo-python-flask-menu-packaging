@@ -1,3 +1,9 @@
+xivo-python-flask-menu-packaging (0.5.0-1~xivo2) wazo-dev; urgency=medium
+
+  * update version
+
+ -- Etienne Lessard <elessard97@gmail.com>  Tue, 29 Nov 2016 15:07:16 -0500
+
 xivo-python-flask-menu-packaging (0.5.0-1~xivo1) xivo-dev; urgency=medium
 
   * Initial release.
