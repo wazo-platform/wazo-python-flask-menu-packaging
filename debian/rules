@@ -5,8 +5,14 @@ PKG = $(word 2,$(shell dpkg-parsechangelog | grep Source))
 VER ?= $(shell cat VERSION)
 FLASKMENU_URL_DOWNLOAD = "https://github.com/inveniosoftware/flask-menu/archive/v${VER}.tar.gz"
 
+export PYBUILD_NAME=flask-menu
+export PYBUILD_DISABLE=test
+
 %:
-	dh $@ --with python2
+	dh $@ --with python3,python2 --buildsystem=pybuild
+
+override_dh_auto_test:
+	@echo
 
 .PHONY: get-orig-source
 

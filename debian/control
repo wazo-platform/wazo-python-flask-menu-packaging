@@ -1,14 +1,21 @@
 Source: xivo-python-flask-menu-packaging
 Section: python
 Priority: extra
-Maintainer: XiVO Dev Team <dev@avencall.com>
-Uploaders: XiVO Builder Team <release@xivo.io>
-Build-Depends: debhelper (>= 9), dh-python, python-all (>= 2.7), python-setuptools, wget
+Maintainer: Wazo Maintainers <dev.wazo@gmail.com>
+Build-Depends: debhelper (>= 9), dh-python, python-all (>= 2.7), python-setuptools, wget, python3-all, python3-setuptools
 Standards-Version: 3.9.4
 X-Python-Version: >= 2.7
+X-Python3-Version: >= 3.4
 
 Package: python-flask-menu
 Architecture: all
 Depends: ${shlibs:Depends}, ${python:Depends}, ${misc:Depends}
 Description: Python library for flask menu
+ .
+
+
+Package: python3-flask-menu
+Architecture: all
+Depends: ${shlibs:Depends}, ${python3:Depends}, ${misc:Depends}
+Description: Python3 library for flask menu
  .
