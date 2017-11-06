@@ -1,4 +1,4 @@
-xivo-python-flask-menu-packaging (0.5.1-1~xivo2) wazo-dev; urgency=medium
+xivo-python-flask-menu-packaging (0.5.1-1~xivo3) wazo-dev; urgency=medium
 
   *  add python3 package
 

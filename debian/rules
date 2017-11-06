@@ -15,6 +15,9 @@ export PYBUILD_SYSTEM=distutils
 override_dh_auto_test:
 	@echo
 
+override_dh_auto_clean:
+	if [ -f setup.py ]; then dh_auto_clean; fi
+
 .PHONY: get-orig-source
 
 get-orig-source:
