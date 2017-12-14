@@ -1,4 +1,25 @@
-# The packaging information for python flask menu in XiVO
+# Debian Packaging of flask-menu for Wazo
 
 This repository contains the packaging information for
 [python-flask-menu](https://github.com/inveniosoftware/flask-menu).
+
+## Building a new version
+
+To build a new version of python-flask-menu for Wazo.
+
+* Update the version number in the `VERSION` file
+* Update the changelog using `dch -i` to the matching version
+* Push the changes
+
+[Jenkins](https://jenkins.wazo.community) will then retrieve and build the new version.
+
+## Building Locally
+
+The following procedure can be used to build on a test environment before submitting a change.
+
+```sh
+make -f debian/rules get-orig-source
+dpkg-buildpackage -us -uc
+```
+
+The `.deb` will be located in the parent directory.
