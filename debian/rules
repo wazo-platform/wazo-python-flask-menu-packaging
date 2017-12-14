@@ -23,3 +23,5 @@ override_dh_auto_clean:
 get-orig-source:
 	@echo "# Downloading..."
 	wget -nv -T10 -t3 $(FLASKMENU_URL_DOWNLOAD) -O ../$(PKG)_$(VER).orig.tar.gz
+	@echo "# Extracting sources..."
+	tar -xvf ../$(PKG)_$(VER).orig.tar.gz --strip 1
