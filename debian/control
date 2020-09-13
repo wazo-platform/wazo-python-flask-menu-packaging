@@ -1,4 +1,4 @@
-Source: xivo-python-flask-menu-packaging
+Source: wazo-python-flask-menu-packaging
 Section: python
 Priority: extra
 Maintainer: Wazo Maintainers <dev.wazo@gmail.com>
