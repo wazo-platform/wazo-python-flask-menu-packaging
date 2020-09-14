@@ -2,9 +2,9 @@ Source: wazo-python-flask-menu-packaging
 Section: python
 Priority: extra
 Maintainer: Wazo Maintainers <dev.wazo@gmail.com>
-Build-Depends: debhelper (>= 9), dh-python, python-setuptools, wget, python3-all, python3-setuptools
+Build-Depends: debhelper (>= 9), dh-python, wget, python3-all, python3-setuptools
 Standards-Version: 3.9.4
-X-Python3-Version: >= 3.4
+X-Python3-Version: >= 3.7
 
 Package: python3-flask-menu
 Architecture: all
