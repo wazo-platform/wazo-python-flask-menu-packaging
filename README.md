@@ -19,6 +19,7 @@ The following procedure can be used to build on a test environment before submit
 
 ```sh
 make -f debian/rules get-orig-source
+tar -xvf ../wazo-python-flask-menu-packaging_*.orig.tar.gz  --strip 1
 dpkg-buildpackage -us -uc
 ```
 
