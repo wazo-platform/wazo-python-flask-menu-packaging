@@ -10,7 +10,7 @@ export PYBUILD_DISABLE=test
 export PYBUILD_SYSTEM=distutils
 
 %:
-	dh $@ --with python3,python2 --buildsystem=pybuild
+	dh $@ --with python3 --buildsystem=pybuild
 
 override_dh_auto_test:
 	@echo
@@ -23,5 +23,3 @@ override_dh_auto_clean:
 get-orig-source:
 	@echo "# Downloading..."
 	wget -nv -T10 -t3 $(FLASKMENU_URL_DOWNLOAD) -O ../$(PKG)_$(VER).orig.tar.gz
-	@echo "# Extracting sources..."
-	tar -xvf ../$(PKG)_$(VER).orig.tar.gz --strip 1
