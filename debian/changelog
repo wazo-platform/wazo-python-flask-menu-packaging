@@ -1,3 +1,9 @@
+wazo-python-flask-menu-packaging (0.7.2-1~wazo2) wazo-dev-buster; urgency=medium
+
+  * update packaging details
+
+ -- Wazo Maintainers <dev+pkg@wazo.community>  Wed, 21 Apr 2021 09:19:53 -0400
+
 wazo-python-flask-menu-packaging (0.7.2-1~wazo1) wazo-dev; urgency=medium
 
   * bump version to 0.7.2
