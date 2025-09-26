@@ -1,3 +1,9 @@
+wazo-python-flask-menu-packaging (2.0.0-1~wazo1) wazo-dev-bookworm; urgency=medium
+
+  * Bump version 2.0.0
+
+ -- Wazo Maintainers <dev+pkg@wazo.community>  Fri, 26 Sep 2025 13:05:29 -0400
+
 wazo-python-flask-menu-packaging (0.7.2-1~wazo7) wazo-dev-bookworm; urgency=medium
 
   * Rebuild for Bookworm
